@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custum css */
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    line-height:1.5;
+    font-size:16px;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+:root{
+    --primary:#DFECFD;
+    --secondary:#362EA9;
+    --tersery:#ED3A4C;
+    --textcolor:#6b6a6d;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.flex-48{
+flex:0 1 48%;
+}
+.flex-31{
+    flex:0 1 31%;
+}
+.flex-25{
+    flex:0 1 25%;
+}
+.flex-60{
+    flex:0 1 60%;
+}
+.flex-15{
+    flex:0 1 15%;
+}
+.flex-12{
+ flex:0 1 12%;
+}
+.flex-50{
+    flex:0 1 50%;
+}
+.flex-43{
+    flex:0 1 43%;
+}
+.flex-33{
+    flex:0 1 33.33%;
+}
+a{
+    text-decoration: none;
+}
+.full-width{
+    width:100%;
+}
+.btn{
+    padding: .8rem 1.6rem;
+    background-color:var(--tersery);
+    color: white;
+    border-radius:.3rem;
+    font-size:1.3rem;
+    display: inline-block;
+}
+.padding{
+    padding:3.5rem 0;
+}
+/* header */
+.header{
+    padding:1rem 0;
+    position: absolute;
+    z-index:999;
+    width: 100%;
+   
+}
+.brand{
+    font-size: 2rem;
+    font-weight:700;
+    color: white;
+}
+.nav-menu a{
+    margin-left: 3rem;
+    font-size:1.3rem;
+    font-weight:600;
+    color: white;
+}
+strong{
+    color: var(--tersery);
+}
+
+/* hero section */
+.hero{
+    background:linear-gradient(to right, rgba(54,45,166,0.8),rgba(55,47,170,.8)),url(./assets/banner.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top:5rem;
+}
+.hero-heading{
+    font-size:3rem;
+    padding-right: 3rem;
+    font-weight:800;
+    color:white;
+    padding-bottom:2.8rem;
+}
+.hero-text{
+    font-size:1.5rem;
+    color: white;
+    padding-bottom:2rem;
+}
+/* about section */
+.about-heading{
+    font-size:2.8rem;
+    font-weight: 800;
+    padding-bottom:1rem;
+}
+.about-text{
+    color: var(--textcolor);
+    font-size:1.3rem;
+    font-weight: 600;
+    padding-bottom: 1.3rem;
+}
+/* join section */
+.join{
+    background-color: var(--primary);
+    position: relative;
+}
+.section-heading{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding-bottom: 3rem;
+}
+.join-text-div{
+    border: .2rem dashed #ED3A4C ;
+    padding-left: 1rem;
+    padding-top:1.3rem;
+    padding-bottom:1rem;
+    padding-right: 1.7rem;
+   
+}
+.join-heading{
+    font-size:1.9rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.join-text{
+    font-size:1.2rem;
+    color: var(--textcolor);
+}
+.span{
+    width:3rem;
+    text-align: center;
+    font-size:2.6rem;
+    font-weight: 800;
+    color: var(--tersery);
+    background-color: var(--primary);
+    position: absolute;
+    top:8.8rem;
+
+}
+/* schedule section */
+.schedule-date{
+    background-color: var(--tersery);
+    text-align: center;
+    height: 9rem;
+    width:8rem;
+    border-radius:50%;
+    font-size:2rem;
+    font-weight: 800;
+    color: white;
+    padding: 0 1rem;
+    line-height:1.2;
+}
+.schedule-img img{
+    border-radius: .4rem;
+}
+.schedule-text h2{
+    font-size: 2rem;
+    font-weight:800;
+    text-transform: capitalize;
+}
+.schedule-text p{
+    font-size:1.4rem;
+    color: var(--textcolor);
+}
+.schedule-date-border{
+    border: .2rem dashed #ED3A4C;
+    background-color: white;
+    color: var(--tersery);
+}
+.schedule-article{
+    padding-bottom:3.5rem;
+}
+/* .event-detail section */
+.event-detail{
+    background-color: var(--primary);
+}
+.event-detail-parent{
+    text-align: center;
+}
+.event-detail-parent h2{
+    font-size:2rem;
+    font-weight: 800;
+    text-align: center;
+
+}
+.event-detail-parent{
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding:2rem 0;
+    
+}
+.event-detail-color{
+    background-color: var(--tersery);
+    border-radius: .7rem;
+    color: white;
+}
+.banner img{
+border-radius: .7rem;
+}
+/* news section */
+.news{
+    background-color: var(--primary)
+}
+.news-heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.news-text{
+    font-size: 1.3rem;
+    color:var(--textcolor);
+}
+.news-a-tag{
+    font-size:1.5rem;
+    text-decoration: underline;
+    color: black;
+}
+.news-a-tag-color{
+    color: var(--tersery);
+}
+/* footer */
+.foter-heading{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+.footer{
+    background-color:#24357B;
+    color: white;
+    
+}
+.footer-nav a{
+    font-size:1.1rem;
+    color:rgb(180, 180, 180);
+}
+.fab{
+    font-size: 1.5rem;
+    color:rgb(180, 180, 180) ;
+    padding-right: 2rem;
+}
+.icon{
+    display:flex;
+}
+.copyright{
+    background-color: #11216A;
+    
+}
+.copyright h2{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--textcolor);
+}
+/* media css */
+@media screen and (max-width:768px){
+    html{
+        font-size:10px;
+    }
+    .flex{
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-60, .flex-25, .flex-31, .flex-43,.flex-50 , .flex-15{
+        flex:0 1 100%
+    }
+    .flex{
+        
+        align-items: center;
+    }
+    
+    .join-text-div{
+    margin-bottom:2rem;
+    }
+    .schedule-article{
+        text-align:center;
+       
+    }
+    .margin{
+        margin-bottom:3rem ;
+    }
+    
+    
+    .schedule-img{
+        padding:0 2em;
+    }
+    .flex-12{
+        flex:none
+    }
+    .schedule-date{
+        margin-bottom: 2rem;
+    }
+    
+    
+}
